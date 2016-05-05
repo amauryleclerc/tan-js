@@ -1,0 +1,12 @@
+<div>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="lieu in lieuxController.lieux track by lieu.codeLieu ">
+
+            <h4 class="list-group-item-heading"> {{lieu.libelle}}</h4>
+            <p class="list-group-item-text">
+                <span ng-repeat="ligne in lieu.ligne track by ligne.numLigne ">{{ligne.numLigne}} </span>
+            </p>
+
+        </li>
+    </ul>
+</div>
