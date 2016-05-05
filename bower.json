@@ -19,6 +19,7 @@
     "bootstrap-css-only": "^3.3.6",
     "angular-ui-router": "^0.2.18",
     "angular-bootstrap": "^1.2.5",
-    "angular-resource": "^1.5.3"
+    "angular-resource": "^1.5.3",
+    "ngGeolocation": "^0.0.8"
   }
 }
