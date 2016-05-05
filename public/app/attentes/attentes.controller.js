@@ -9,3 +9,4 @@ app.controller("AttentesController", ["AttentesService", "$stateParams", functio
     }
     this.getAttentes();
 }]);
+

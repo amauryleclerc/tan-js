@@ -1,12 +1,13 @@
 <div>
     <ul class="list-group">
         <li class="list-group-item" ng-repeat="attente in attentesController.attentes  ">
-
-            <h4 class="list-group-item-heading"> {{attente.ligne.numLigne}} - {{attente.terminus}}</h4>
-            <p class="list-group-item-text">
-                {{attente.temps}}
-            </p>
-
+            <a ui-sref="horaires({codeArret: attente.arret.codeArret, numLigne:attente.ligne.numLigne , sens: attente.sens})">
+                <h4 class="list-group-item-heading"> {{attente.ligne.numLigne}} - {{attente.terminus}}</h4>
+                <p class="list-group-item-text">
+                    {{attente.temps}}
+                </p>
+            </a>
         </li>
     </ul>
 </div>
+

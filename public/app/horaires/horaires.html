@@ -1,0 +1,22 @@
+<div>
+    <h2>Prochains horaires</h2>
+    <ul class="list-group">
+        <div ng-repeat="horaire in horairesController.horaires.prochainsHoraires ">
+            <li class="list-group-item" ng-repeat="passage in horaire.passages">
+                <p class="list-group-item-text">
+                    {{horaire.heure}}{{passage}}
+                </p>
+            </li>
+        </div>
+    </ul>
+      <h2>Horaires</h2>
+    <ul class="list-group">
+        <div ng-repeat="horaire in horairesController.horaires.horaires ">
+            <li class="list-group-item" ng-repeat="passage in horaire.passages">
+                <p class="list-group-item-text">
+                    {{horaire.heure}}{{passage}}
+                </p>
+            </li>
+        </div>
+    </ul>
+</div>

@@ -1,4 +1,8 @@
 <div>
+    
+    <input type="text" ng-model="lieuxController.latitude"></div>
+    <input type="text" ng-model="lieuxController.longitude"></div>
+    <button ng-click="lieuxController.getLieux()">rechercher</button>
     <ul class="list-group">
         <li class="list-group-item" ng-repeat="lieu in lieuxController.lieux track by lieu.codeLieu ">
             <a ui-sref="attentes({codeLieu: lieu.codeLieu})">
